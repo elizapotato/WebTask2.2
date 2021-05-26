@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+<!doctype html>
+<html>
+<head>
+    <title>Manual</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link type="text/css" href="~/Style/Style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <b>Backend2</b> <a href="~/Home/Index">Home</a>
+    </header>
+    <main>
+        <h2>Manual</h2>
+        <form method="post" action="~/Home/ModParSingAction">
+            <input type="number" name="First" />
+            <br />
+            <select name="Operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <br />
+            <input type="number" name="Second" />
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+    </main>
+    <hr>
+    <footer>© @DateTime.Now.Year - Backend2</footer>
+</body>
+</html>
